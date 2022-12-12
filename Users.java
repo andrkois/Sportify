@@ -1,12 +1,17 @@
-public class Users {
+import java.io.Serializable;
+public class Users implements Serializable{
+	private String username;
+	private String password;
+    private int choice;
 	private String name;
 	private int age;
 	private String sport;
 	private String bio;
-	public Users(String n) {
-		name = n;
-
-	}
+	public Users(String username, String password, int choice){
+		this.username=username;
+		this.password=password;
+	    this.choice=choice;
+    }
 	public void setName(String n) {
 		name = n;
 	}
