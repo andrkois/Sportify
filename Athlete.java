@@ -3,8 +3,8 @@ public class Athlete extends Users{
     private String current_team;
     private double height;
     private double weight;
-    public Athlete(String n) {
-		super(n);
+    public Athlete(String usern, String p, int c) {
+		super(usern,p,c);
 	}
     public void setPosition(String p) {
         position = p;
@@ -43,7 +43,6 @@ public class Athlete extends Users{
 		} else if (number == 4) {
 			setWeight(d);
 		}
-	}
 	}
 }
 

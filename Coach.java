@@ -1,8 +1,8 @@
 public class Coach extends Users {
 	private int years_of_experience;
 	private String team;
-	public Coach(String n){
-		super(n);
+	public Coach(String usern, String p, int c){
+		super(usern, p, c);
 
 	}
 	public void setYears(int y) {
