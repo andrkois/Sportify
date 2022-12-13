@@ -4,6 +4,7 @@ public class Athlete extends Users implements Serializable{
     private String current_team;
     private double height;
     private double weight;
+    private int likes;
     public Athlete(String usern, String p, int c) {
 		super(usern,p,c);
 	}
@@ -44,6 +45,13 @@ public class Athlete extends Users implements Serializable{
 		} else if (number == 4) {
 			setWeight(d);
 		}
+	}
+	public int getLikes() {
+		return likes;
+	}
+
+	public void addLike() {
+		likes++;
 	}
 }
 
