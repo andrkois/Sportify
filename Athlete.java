@@ -1,4 +1,5 @@
-public class Athlete extends Users{
+import java.io.Serializable;
+public class Athlete extends Users implements Serializable{
     private String position;
     private String current_team;
     private double height;

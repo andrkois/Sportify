@@ -1,4 +1,5 @@
-public class Coach extends Users {
+import java.io.Serializable;
+public class Coach extends Users implements Serializable {
 	private int years_of_experience;
 	private String team;
 	public Coach(String usern, String p, int c){
