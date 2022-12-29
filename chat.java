@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Chat {
 
-	public void openChat(User name) {
+	public static void openChat(User name, ArrayList<ArrayList<ArrayList<String>>> msg) {
         // Here Messages is an ArrayList of ArrayLists
         ArrayList<ArrayList<String> > chat =
                   new ArrayList<ArrayList<String> >();
@@ -11,10 +11,11 @@ public class Chat {
         ArrayList<String> userName = new ArrayList<String>();
         userName.add(name.getName());
         chat.add(userName);
+        msg.add(chat);
 	}
 
 	// This method checks if there is already an open chat or opens a chat if called by a coach
-	public boolean checkChat(User receiver, User sender, ArrayList<ArrayList<ArrayList<String> > > msgSender) {
+	public static boolean checkChat(User receiver, User sender, ArrayList<ArrayList<ArrayList<String> > > msgSender) {
 
 		int n = -10;
 		for (int i = 0; i < msgSender.size(); i++) {
@@ -42,7 +43,7 @@ public class Chat {
 	}
 
 	// This method prints the whole conversation
-	public void seeConversation(ArrayList< ArrayList< ArrayList<String> > > msgSender, User receiver) {
+	public static void seeConversation(ArrayList< ArrayList< ArrayList<String> > > msgSender, User receiver) {
 		int n = -10;
 		for (int i = 0; i < msgSender.size(); i++) {
 			if (msgSender.get(i).get(1).get(1) == receiver.getName()) {
@@ -59,7 +60,7 @@ public class Chat {
 	}
 
 	// This method is used to send and save a new message
-	public void sendMessage(User receiver, User sender, ArrayList<ArrayList<ArrayList<String> > > msgSender,
+	public static void sendMessage(User receiver, User sender, ArrayList<ArrayList<ArrayList<String> > > msgSender,
 		ArrayList<ArrayList<ArrayList<String> > > msgReceiver, boolean flag) {
 
 		if (flag == true) {
@@ -95,4 +96,5 @@ public class Chat {
 		}
 	}
 }
+
 
