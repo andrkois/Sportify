@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
-import java.util.InputMismatchException;  
+import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args) throws IOException {
 
@@ -9,24 +9,24 @@ public class Main {
         {
             FileInputStream fis = new FileInputStream("UserInfo.ser");
             ObjectInputStream ois = new ObjectInputStream(fis);
- 
+
             ArrayList<Users> usersarray = (ArrayList<Users>)ois.readObject();
- 
+
             ois.close();
             fis.close();
             FileInputStream fisath = new FileInputStream("AthleteInfo.ser");
             ObjectInputStream oisath = new ObjectInputStream(fisath);
- 
+
             ArrayList<Athletes> athletesearray = (ArrayList<Athletes>)oisath.readObject();
- 
+
             oisath.close();
             fisath.close();
 
             FileInputStream fiscoa = new FileInputStream("CoachInfo.ser");
             ObjectInputStream oiscoa = new ObjectInputStream(fiscoa);
- 
+
             ArrayList<Coaches> coachesarray = (ArrayList<Coaches>)oiscoa.readObject();
- 
+
             oiscoa.close();
             fiscoa.close();
 
@@ -43,10 +43,10 @@ if (logorreg == 1 || logorreg==2){
     break;
 }
     }
-    catch (InputMismatchException ex) {  
+    catch (InputMismatchException ex) {
         System.out.println(ex);
-            }  
-System.out.println("Wrong ...Press 1 or 2");   
+            }
+System.out.println("Wrong ...Press 1 or 2");
 } while (logorreg != 1 && logorreg!=2);
 if (logorreg==1){
 
@@ -70,7 +70,7 @@ for (Users q : usersarray){
 System.out.println("Enter Password");
 Scanner objpass = new Scanner(System.in);
 String password = objpass.nextLine();
-/*System.out.println("Enter name"); 
+/*System.out.println("Enter name");
 Scanner objname = new Scanner(System.in);
 String name = objname.nextLine();*/
 System.out.println("Are you an athlete or a coach?/n Write athlete for athlete or coach for coach");
@@ -80,7 +80,7 @@ Scanner objchoice = new Scanner(System.in);
 choice = objchoice.nextLine();
 if (choice.equals("athlete") || choice.equals("coach")){
     break;
-} 
+}
 System.out.println("Wrong... Write athlete or coach");
 } while (choice!="athlete" && choice!="coach");
 Users user = new Users(username1, password, choice) ;
@@ -94,7 +94,8 @@ if (choice.equals("athlete")){
     AthletesActions athleteact = new AthletesActions(athlete);
     int i=1;
 	do {
-     System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to see a Chat \n4 to send a message \n5 to log out");
+		System.out.println();
+        System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to see a Chat \n4 to send a message \n5 to log out");
 		Scanner sc = new Scanner(System.in);
         boolean flag1;
         do{
@@ -171,7 +172,7 @@ if (choice.equals("athlete")){
                     athleteact.sendNewMessage(c);
 					break;
 				}
-        
+
 			}
 			if(flag1== false) {
 				System.out.println("There is no coach with this username, write one of the usernames below:");
@@ -182,9 +183,9 @@ if (choice.equals("athlete")){
 				usernameuser= input1.nextLine();
 			}
 		} while (flag1==false);
-            
+
         } else {
-			System.out.println("You logged out successfully. See you later Sweetee.");
+			System.out.println("You logged out successfully.");
 			flaglg=true;
 		}
 	}while( i != 5);
@@ -194,9 +195,10 @@ if (choice.equals("athlete")){
     CoachActions coachact = new CoachActions(athletesearray, coach,athletesearray.size());
 	int i=0;
 	do{
-     System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to search for athletes \n4 to see a Chat \n5 to send a message \n6 to log out");
+		System.out.println();
+        System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to search for athletes \n4 to see a Chat \n5 to send a message \n6 to log out");
 		Scanner sc4 = new Scanner(System.in);
-        
+
         do{
 		i = sc4.nextInt();
         if(i==1 || i==2 || i==3 || i==4 || i==5 || i==6){
@@ -230,9 +232,9 @@ if (choice.equals("athlete")){
 		} else if (i == 2){
 			coachact.showProfile();
         }
-      
+
         else if (i==3){
-	
+
 		coachact.showAthletes();
         }else if(i==4){
 	     input1 = new Scanner(System.in);
@@ -259,7 +261,7 @@ if (choice.equals("athlete")){
 			}
 		} while (flag==false);
     }else if (i ==5){
-        
+
         System.out.println("To who? Enter username");
 		usernameuser = input1.nextLine();
 		boolean flag1 = false;
@@ -283,11 +285,11 @@ if (choice.equals("athlete")){
 			}
 		} while (flag1==false);
     } else {
-		System.out.println("You logged out successfully See you later Sweetee.");
+		System.out.println("You logged out successfully.");
 		flaglg=true;
 	}
    }while(i!=6);
-	
+
 }
 //LOG IN
 } else {//we have to develop a check condition
@@ -302,9 +304,9 @@ while (flag==true){
 for (Users q : usersarray){
     if (q.getUsername().equals(username1) && q.getPassword().equals(password1)){
         flag=false;
-        System.out.println("You logged in successfully");
+        System.out.println("You logged in successfully.");
        x = q;
-    
+
         break;
     }
 }
@@ -331,7 +333,7 @@ for (Coaches xc : coachesarray) {
     if (usernametemp.equals(xc.getUsername())){
         identity = 2;
         coach=xc;
-      
+
     }
 }//////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -344,11 +346,12 @@ Scanner input1 = new Scanner(System.in);
 //for athletes
 String usernameuser;
 if (identity == 1){
-    
+
     AthletesActions athleteact = new AthletesActions(athlete);
     int i=1;
 	do{
-     System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to see a Chat \n4 to send a message \n5 to log out");
+	    System.out.println();
+        System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to see a Chat \n4 to send a message \n5 to log out");
 		Scanner sc = new Scanner(System.in);
         boolean flag1;
         do{
@@ -425,7 +428,7 @@ if (identity == 1){
                     athleteact.sendNewMessage(c);
 					break;
 				}
-        
+
 			}
 			if(flag1== false) {
 				System.out.println("There is no coach with this username, write one of the usernames below:");
@@ -436,22 +439,23 @@ if (identity == 1){
 				usernameuser= input1.nextLine();
 			}
 		} while (flag1==false);
-            
+
         }else {
-			System.out.println("You logged out successfully See you later Sweetee.");
+			System.out.println("You logged out successfully.");
 			flaglg=true;
 		}
 	}while(i!=5);
-    
+
 } else { //for coach
-    
+
     CoachActions coachact = new CoachActions(athletesearray, coach,athletesearray.size());
 	int i=0;
 	do{
-     System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to search for athletes \n4 to see a Chat \n5 to send a message \n6 to logout");
+		System.out.println();
+        System.out.println("Type \n1 to edit your profile \n2 to view it \n3 to search for athletes \n4 to see a Chat \n5 to send a message \n6 to logout");
 		Scanner sc4 = new Scanner(System.in);
-        
-		
+
+
         do{
 		i = sc4.nextInt();
         if(i==1 || i==2 || i==3 || i==4 || i==5 || i == 6){
@@ -485,9 +489,9 @@ if (identity == 1){
 		} else if (i == 2){
 			coachact.showProfile();
         }
-      
+
         else if (i==3){
-	
+
 		coachact.showAthletes();
         }else if(i==4){
 	     input1 = new Scanner(System.in);
@@ -514,7 +518,7 @@ if (identity == 1){
 			}
 		} while (flag==false);
     }else if (i == 5) {
-        
+
         System.out.println("To who? Enter username");
 		usernameuser = input1.nextLine();
 		boolean flag1 = false;
@@ -538,18 +542,18 @@ if (identity == 1){
 			}
 		} while (flag1==false);
     } else {
-		System.out.println("You logged out successfully See you later Sweetee.");
+		System.out.println("You logged out successfully.");
 		flaglg=true;
 	}
 		}while(i!=6);
 
-	
-   
-    
+
+
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-}  
+}
 
         FileOutputStream fos = new FileOutputStream("UserInfo.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -567,13 +571,13 @@ if (identity == 1){
         ooscoa.close();
         foscoa.close();
 
-        } 
-        catch (IOException ioe) 
+        }
+        catch (IOException ioe)
         {
             ioe.printStackTrace();
             return;
-        } 
-        catch (ClassNotFoundException c) 
+        }
+        catch (ClassNotFoundException c)
         {
             System.out.println("Class not found");
             c.printStackTrace();
@@ -582,5 +586,5 @@ if (identity == 1){
 
     }
 
-    
+
 }
