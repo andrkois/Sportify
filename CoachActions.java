@@ -330,6 +330,7 @@ public class CoachActions {
 						}while(flag1);
 						int numberOfChosenAthlete = numofath;
 						if (numberOfChosenAthlete > 0 && numberOfChosenAthlete < numberOfAthletes) {
+							athletesarray.get(numberOfChosenAthlete).showAllProfile(numberOfChosenAthlete)
 							//add like
 							athletesearray.get(numberOfChosenAthlete).addLike();
 							//send message
@@ -377,12 +378,13 @@ public class CoachActions {
 						f = false ;
 					}
 					if (choice3 == 1 || choice3 == 2) {
+						if (choic3 == 1 AND h2 = numberOfAthletes) {
+							System.out.println("There aren't any athletes left")
+							f = false;
+						}
 						f2 = false;
 					}
 				} catch (InputMismatchException e1) {
-					System.out.println("Please give number 1 or 2");
-					input2.next();
-				} catch (ArithmeticException e2) {
 					System.out.println("Please give number 1 or 2");
 					input2.next();
 				}
