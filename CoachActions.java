@@ -378,7 +378,7 @@ public class CoachActions {
 						f = false ;
 					}
 					if (choice3 == 1 || choice3 == 2) {
-						if (choic3 == 1 AND h2 = numberOfAthletes) {
+						if (choice3 == 1 AND h2 = numberOfAthletes) {
 							System.out.println("There aren't any athletes left")
 							f = false;
 						}
