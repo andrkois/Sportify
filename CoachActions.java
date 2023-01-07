@@ -382,6 +382,9 @@ public class CoachActions {
 				} catch (InputMismatchException e1) {
 					System.out.println("Please give number 1 or 2");
 					input2.next();
+				} catch (ArithmeticException e2) {
+					System.out.println("Please give number 1 or 2");
+					input2.next();
 				}
 			} while (f2);
 			h1 = h2;
