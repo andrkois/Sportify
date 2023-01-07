@@ -330,7 +330,7 @@ public class CoachActions {
 						}while(flag1);
 						int numberOfChosenAthlete = numofath;
 						if (numberOfChosenAthlete > 0 && numberOfChosenAthlete < numberOfAthletes) {
-							athletesarray.get(numberOfChosenAthlete).showAllProfile(numberOfChosenAthlete)
+							showAllProfile(numberOfChosenAthlete)
 							//add like
 							athletesearray.get(numberOfChosenAthlete).addLike();
 							//send message
