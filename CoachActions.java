@@ -330,7 +330,7 @@ public class CoachActions {
 						}while(flag1);
 						int numberOfChosenAthlete = numofath;
 						if (numberOfChosenAthlete > 0 && numberOfChosenAthlete < numberOfAthletes) {
-							showAllProfile(numberOfChosenAthlete)
+							showAllProfile(numberOfChosenAthlete);
 							//add like
 							athletesearray.get(numberOfChosenAthlete).addLike();
 							//send message
@@ -378,8 +378,8 @@ public class CoachActions {
 						f = false ;
 					}
 					if (choice3 == 1 || choice3 == 2) {
-						if (choice3 == 1 AND h2 = numberOfAthletes) {
-							System.out.println("There aren't any athletes left")
+						if (choice3 == 1 AND h2 == numberOfAthletes) {
+							System.out.println("There aren't any athletes left");
 							f = false;
 						}
 						f2 = false;
@@ -392,7 +392,7 @@ public class CoachActions {
 			h1 = h2;
 		}while(h2 != numberOfAthletes && f);
 	}
-//oi methodoi na deixnoun kai ta likes(getLikes())
+
 	public String showBasicProfile(int number) {
 		return ("Username: " + athletesearray.get(number).getUsername() + " Name: " +athletesearray.get(number).getName()+ " Age: " +(athletesearray.get(number)).getAge()+" Sport: "+(athletesearray.get(number)).getSport()+" Position: "+(athletesearray.get(number)).getPosition()+" Current Team: "+
 							(athletesearray.get(number)).getCurrent_team()+" Height: "+(athletesearray.get(number)).getHeight()+" Weight: "+(athletesearray.get(number)).getWeight() + " Likes: " + athletesearray.get(number).getLikes()) ;
@@ -406,13 +406,22 @@ public class CoachActions {
 	public void seeWholeConversation(Users receiver) {
 			Chat.seeConversation(coach.getMessages(), receiver);
 			Scanner in = new Scanner(System.in);
-			int reachout;
-			System.out.println("Do you want to send a new message? Type 1 for YES 2 for NO");
-			reachout = in.nextInt();
-			 while (reachout!=1 && reachout!=2) {
-				System.out.println("Wrong answer.Do you want to send a new message? Type 1 for YES 2 for NO");
-				reachout = in.nextInt();
-			 }
+			int reachout = 0;
+						System.out.println("Do you want to send a new message? Type 1 for YES 2 for NO :");
+						boolean continueLoop = true;
+						do {
+							try {
+								reachout = in.nextInt();
+								while (reachout!=1 && reachout!=2) {
+			 			 	    	System.out.println("Wrong answer.Please type 1 for YES 2 for NO :");
+									reachout = in.nextInt();
+						     	}
+								continueLoop = false;
+							} catch ( InputMismatchException e) {
+								System.out.println("You must enter a number. Please type 1 for YES 2 for NO :");
+								in.nextLine();
+							}
+			} while (continueLoop);
 
 			if (reachout == 1) {
 				Chat.sendMessage(receiver, coach, Chat.checkChat(receiver, coach));
