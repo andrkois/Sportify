@@ -316,7 +316,7 @@ public class CoachActions {
 							System.out.println("Please write their ascending number");
 							try {
 								numofath = in.nextInt() - 1;
-								if (numofath > 0 && numofath < numberOfAthletes) {
+								if (numofath >= 0 && numofath < numberOfAthletes) {
 									flag1 = false;
 								}
 							} catch (InputMismatchException e1) {
@@ -329,7 +329,7 @@ public class CoachActions {
 
 						}while(flag1);
 						int numberOfChosenAthlete = numofath;
-						if (numberOfChosenAthlete > 0 && numberOfChosenAthlete < numberOfAthletes) {
+						if (numberOfChosenAthlete >= 0 && numberOfChosenAthlete < numberOfAthletes) {
 							showAllProfile(numberOfChosenAthlete);
 							//add like
 							athletesearray.get(numberOfChosenAthlete).addLike();
