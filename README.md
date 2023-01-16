@@ -2,6 +2,7 @@
 This is a social media app. We created this app for a university project.
 
 ##1o bullet
+-----------
 
 ##2o bullet
 
