@@ -17,7 +17,7 @@ Based on the type of user (Coach/ Athlete) the rest of the application is differ
 
 Menu of a coach:
 After logging in as a coach the following menu appears on the screen: 
-***Type : 1 to edit your profile 2. to view it 3. to search for athletes 4. to see a Chat 5. to send a message 6. to logout***
+⋅⋅***Type : 1 to edit your profile 2. to view it 3. to search for athletes 4. to see a Chat 5. to send a message 6. to logout***
 1. The coach can edit everything regarding their profile 
 2. The coach can view their complete profile 
 3. The coach can search for athletes (This also gives them the opportunity to see the top players based on likes etc) 
@@ -28,11 +28,11 @@ After logging in as a coach the following menu appears on the screen:
 Menu of an athlete:
 After logging in as an athlete the following menu appears on the screen: 
 ***Type : 1. to edit your profile 2. to view your profile 3. to see a Chat 4. to send a message 5. to log out***
-1: The athlete can edit everything regarding their profile 
-2: The athlete can view their complete profile 
-3: The athlete can see an already open chat between them and a coach 
-4: The athlete can send a message to an already open chat between them and a coach 
-5: The athlete logs out. After logging out everything is saved.
+1. The athlete can edit everything regarding their profile 
+2. The athlete can view their complete profile 
+3. The athlete can see an already open chat between them and a coach 
+4. The athlete can send a message to an already open chat between them and a coach 
+5. The athlete logs out. After logging out everything is saved.
 
 
 Structure of git repository
