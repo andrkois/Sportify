@@ -1,7 +1,7 @@
 # Sportify
 Sportify connects athletes with coaches.
-More specific it provides the change to the athlete to show his/hers profile and for coaches the change to search for athletes matching their interests.
-If a coach likes an athlete, a chat opens and the can now communicate further for the next steps.
+Specifically, Sportify helps athletes show their profile and gives the opportunity to coaches to search for athletes matching their interests.
+If a coach likes an athlete, a chat opens and they can now communicate further for their next steps.
 
 Instructions for compilation:
 -----------
