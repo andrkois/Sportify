@@ -1,11 +1,14 @@
 # Sportify
 This is a social media app. We created this app for a university project.
 
-1o bullet
+Instructions for compilation:
 -----------
+If you want to compile our java project you should download first the src\main\java directory, which includes the java files. You should also have the pom.xml file and the three Serialized files UserInfo.ser, AthleteInfo.ser, CoachInfo.ser so that you can use the stored data for the Users, Athletes and Coaches objects. After downloading the necessary files, please create a new folder and place in it the src\main\java directory, the pom.xml and the serialized files. Bear in mind that all the files that you have downloaded from git should be unzipped. For the compilation of the project use the **maven** tool, which you can download from https://maven.apache.org/download.cgi. Then, open the command line prompt and move to the directory of the folder that you have created, with the cd command. Use the command **mvn compile** to compile the project and then the command **mvn package** so that you create a jar file, which you can use to run our social media app.
 
-2o bullet
+Instruction for executing the program:
 -----------
+After you have created the **jar** file, you can run the project by using the command **java -jar target\sportify-0.1.0.jar**. The target directory in the command is created when you are packaging the project and it includes the executable jar file. The sportify-0.1.0 is the name of the project followed by its version.
+
 
 Instructions for use:
 --------------------
