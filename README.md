@@ -173,7 +173,7 @@ The smallest Arraylist contains the message sent in the conversation between the
  Sender is the user that calls the method and the receiver is given as an argument.
  The method saves the name of the sender next to their message and inserts them to the Arraylists of both the sender and the receiver.
  
- AthletesActions
+ ## AthletesActions
  ------------
 
 AthletesActions class is responsible for the actions of the athletes. Everything an athlete can do 
