@@ -112,7 +112,7 @@ UML
 
         4. weight
 
--Coaches class:
+- Coaches class:
 
    - Additional attributes are assigned to the variables:
 
