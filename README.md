@@ -114,11 +114,11 @@ UML
 
 -Coaches class:
 
-    - Additional attributes are assigned to the variables:
+   - Additional attributes are assigned to the variables:
 
-        1. years_of_experience
+      1. years_of_experience
 
-        2. team
+      2. team
 
 
 
