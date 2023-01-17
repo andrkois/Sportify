@@ -60,3 +60,26 @@ Data structure and algorithms used by the application
 
 The storing of our data happens in *.ser* files. More specifically, we created 3 array lists (*usersarray*, *coachesarray*, *athletesarray*) that contain the objects of each *User*, *Coach*, *Athlete* in the corresponding order. In the begging of the program, the array lists are deserialized (converted from bytes to objects) and are now ready to be used by the program without any needed connection with another database. At the end of the program execution, the updated by the users array lists are serialized, overriding the previous ones and being converted into bytes.
 Inside *coachesarray* and *athletesarray* there is another ArrayList called *messages*. This *messages* ArrayList is an instance variable of type Users, which is inherited by the Athletes and Coaches objects. It consists of many ArrayLists, each one representing a chat of the user with someone. These ArrayLists also consist of ArrayLists, with the latter representing a message and their sender. In this way, all messages can be saved. It must be noted that the **first** ArrayList inside the ArrayLists that represent a chat consists of only a String, the username of the contact.
+
+Chat Class
+------------
+
+Chat class is responsible for the chats between athletes and coaches.
+Messages are stored in an ArrayList<Arraylist<Arraylist<String>>>.
+The bigger ArrayList contains all the messages of a user.
+The second bigger ArrayList contains all the messages between two users
+The smallest Arraylist contains the message sent in the conversation between the two aforementioned users. More specifically, it has the form of <name of sender, message>
+
+- **OpenChat** method is used to open a chat between a coach and an athlete. It uses Arraylists to save the messages.
+ It is important to know that only a coach can open a chat.
+ 
+- **CheckChat** method is used to check if there is already a chat between a coach and an athlete.
+ Returns boolean (true if there is a chat and false if there is not).
+ If there is not and open chat and the method is called by an athlete a chat is opened, otherwise it returns error messages to the user.
+ 
+- **SeeConversation** method is used so the user can see the whole conversation between them and a coach/ athlete.
+
+- **SendMessage** method is used to send and save a new message.
+ Sender is the user that calls the method and the receiver is given as an argument.
+ The method saves the name of the sender next to their message and inserts them to the Arraylists of both the sender and the receiver.
+ 
