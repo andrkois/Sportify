@@ -1,5 +1,7 @@
 # Sportify
-This is a social media app. We created this app for a university project.
+Sportify connects athletes with coaches.
+More specific it provides the change to the athlete to show his/hers profile and for coaches the change to search for athletes matching their interests.
+If a coach likes an athlete, a chat opens and the can now communicate further for the next steps.
 
 Instructions for compilation:
 -----------
