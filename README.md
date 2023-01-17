@@ -54,8 +54,109 @@ In the beginning, the different operations were assigned to two-person teams and
 The ***MAIN-FINAL*** branch was the testing branch in which everyone committed their code and updated the classes.
 
 
-5o bullet
+UML
 -----
+
+##### Main class 
+
+- Get the ability to write and register data 
+
+- Otherwise in case the account already exists it is directly linked to the corresponding coach / athlete actions 
+
+- Providing the existing functions
+
+
+
+##### User class
+
+- After the user enters the program, the data entry is provided and stored in the user class
+
+- The following information is assigned:
+
+    1. username
+
+    2. password
+
+    3. choice
+
+    4. name
+
+    5. age
+
+    6. sport
+
+    7. bio
+
+- The class includes corresponding set/get methods
+
+
+
+##### Athletes class/Coaches class
+
+- These two classes inherit the elements of the User class 
+
+- Depending on the choice of each User they are registered in the corresponding group of athletes or coaches
+
+- Athletes class:
+
+    - Additional attributes are assigned to the variables:
+
+        1. position
+
+        2. current_team
+
+        3. height
+
+        4. weight
+
+-Coaches class:
+
+    - Additional attributes are assigned to the variables:
+
+        1. years_of_experience
+
+        2. team
+
+
+
+##### CoachActions class
+
+- In this class, each coach has the ability to:
+
+    - View and edit their profile
+
+    - Search for certain athletes according to specific characteristics
+
+    - Communicate with the athletes through a series of methods
+
+
+
+##### AthletesActions class
+
+
+
+In this class, each athlete has the possibility to:
+
+- View and edit his/her profile
+
+- Reply and see the open conversations he has with the coaches
+
+
+The above functions are provided through a series of methods
+
+
+
+##### Chat class
+
+This class of the program:
+
+- Accepts the messages of the respective athletes and coaches
+
+- Creates the corresponding chat between them
+
+- Which is accessible to both athletes and coaches
+
+
 
 Data structure and algorithms used by the application
 ------
