@@ -203,7 +203,7 @@ After seeing the athletes the coach is asked whether or not they are interested 
 
 - **showBasicProfile** method is used to show the basic data of the chosen athlete
 
-- **showAllProfile** method is used to show all data of the chosen athlete
+- **showAllProfile** method is used to show all data of the chosen athlete (Basic + Bio)
 
 - **seeWholeConversation** method is used to print the whole conversation between the coach and an athlete (marked as receiver)
 
