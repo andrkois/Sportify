@@ -67,89 +67,89 @@ The class uses inheritance and is the superclass of the subclassses Athletes and
 The class, also implements the Serializable interface.
 
 It is a public class which contains lots of set and get methods for several private instance variables, which are used for the attributes of a User. 
--**Users** method is the constructor method of the "Users" class and it has three attributes String "username",String "password",String "choice". The choice attribute is for the user to choose if he is an athlete of a coach.
+- **Users** method is the constructor method of the "Users" class and it has three attributes String "username",String "password",String "choice". The choice attribute is for the user to choose if he is an athlete of a coach.
 
--**setName** is a void setter method in the "Users" class. It sets the value of the "name" instance variable to the value passed in as the parameter "n". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "name" instance variable.
+- **setName** is a void setter method in the "Users" class. It sets the value of the "name" instance variable to the value passed in as the parameter "n". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "name" instance variable.
 
--**getName** is a String getter method which returns the name of the user when the user wants to view his profile.
+- **getName** is a String getter method which returns the name of the user when the user wants to view his profile.
 
--**setAge** is a void setter method in the "Users" class. It sets the value of the "age" instance variable to the value passed in as the parameter "a". This method can be called on an instance of the "Users" class and takes an integer as an argument, which will be stored in the "age" instance variable.
+- **setAge** is a void setter method in the "Users" class. It sets the value of the "age" instance variable to the value passed in as the parameter "a". This method can be called on an instance of the "Users" class and takes an integer as an argument, which will be stored in the "age" instance variable.
 
--**getAge** is a int getter method which returns the age of the user when the user wants to view his profile.
+- **getAge** is a int getter method which returns the age of the user when the user wants to view his profile.
 
--**setSport** is a void setter method in the "Users" class. It sets the value of the "sport" instance variable to the value passed in as the parameter "s". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "sport" instance variable.
+- **setSport** is a void setter method in the "Users" class. It sets the value of the "sport" instance variable to the value passed in as the parameter "s". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "sport" instance variable.
 
--**getSport** is a String getter method which returns the sport of the user when the user wants to view his profile.
+- **getSport** is a String getter method which returns the sport of the user when the user wants to view his profile.
 
--**setBio** is a void setter method in the "Users" class. It sets the value of the "bio" instance variable to the value passed in as the parameter "b". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "bio" instance variable. The bio can include multiple information about the user. e.g if the user is a footballer it could contain his goals per match.
+- **setBio** is a void setter method in the "Users" class. It sets the value of the "bio" instance variable to the value passed in as the parameter "b". This method can be called on an instance of the "Users" class and takes a String as an argument, which will be stored in the "bio" instance variable. The bio can include multiple information about the user. e.g if the user is a footballer it could contain his goals per match.
 
--**getBio** is a String getter method which returns the bio of the user when the user wants to view his profile. 
+- **getBio** is a String getter method which returns the bio of the user when the user wants to view his profile. 
 
--**setUsername** is a void setter method in the "Users" class. It sets the value of the "username" instance variable to the value passed in as the parameter "usern". This method can be called on an instance of the "Users" class, and takes a String as an argument, which will be stored in the "username" instance variable.
+- **setUsername** is a void setter method in the "Users" class. It sets the value of the "username" instance variable to the value passed in as the parameter "usern". This method can be called on an instance of the "Users" class, and takes a String as an argument, which will be stored in the "username" instance variable.
 
--**getUsername** is a String getter method which returns the username of the user.
+- **getUsername** is a String getter method which returns the username of the user.
 
--**setPassword*** is a void setter method in the "Users" class. It sets the value of the "password" instance variable to the value passed in as the parameter "p". This method can be called on an instance of the "Users" class, and takes a String as an argument, which will be stored in the "password" instance variable.
+- **setPassword*** is a void setter method in the "Users" class. It sets the value of the "password" instance variable to the value passed in as the parameter "p". This method can be called on an instance of the "Users" class, and takes a String as an argument, which will be stored in the "password" instance variable.
 
--**getPassword** is a String getter method which returns the password of the user.
+- **getPassword** is a String getter method which returns the password of the user.
 
--**getMessages** is a getter method in the "Users" class, it returns the "messages" instance variable, which is an ArrayList of ArrayLists of ArrayLists of Strings. This method can be called on an instance of the "Users" class, and returns the value stored in the "messages" variable. It does not take any arguments.
+- **getMessages** is a getter method in the "Users" class, it returns the "messages" instance variable, which is an ArrayList of ArrayLists of ArrayLists of Strings. This method can be called on an instance of the "Users" class, and returns the value stored in the "messages" variable. It does not take any arguments.
 
 Athletes Class 
 -----------------
 It is a public class which extends the "Users" class and also implements the Serializable interface. 
 It contains multiple private instance variables which are used to describe the attributes of an Athlete.
 
--**Athletes** method is the constructor method of "Athletes" class that calls the constructor of the superclass passing the parameters "usern"(for the username),"p" (for password)and "c" (for choice).
+- **Athletes** method is the constructor method of "Athletes" class that calls the constructor of the superclass passing the parameters "usern"(for the username),"p" (for password)and "c" (for choice).
 
--**setPosition** is a void setter method which sets the value of the "position" instance variable to the value passed in as the parameter "p". This method can be called on an instance of the "Athletes" class, and takes a String as an argument, which will be stored in the "position" instance variable.
+- **setPosition** is a void setter method which sets the value of the "position" instance variable to the value passed in as the parameter "p". This method can be called on an instance of the "Athletes" class, and takes a String as an argument, which will be stored in the "position" instance variable.
 
--**getPosition** is a String getter method which returns the position of an Athlete.
+- **getPosition** is a String getter method which returns the position of an Athlete.
 
--**setCurrent_team** is a void setter method which sets the value of the "current_team" instance variable to the value passed in as the parameter "ct". This method can be called on an instance of the "Athletes" class, and takes a String as an argument, which will be stored in the "current_team" instance variable.
+- **setCurrent_team** is a void setter method which sets the value of the "current_team" instance variable to the value passed in as the parameter "ct". This method can be called on an instance of the "Athletes" class, and takes a String as an argument, which will be stored in the "current_team" instance variable.
 
--**getCurrent_team** is a String getter method which returns the current team of an Athlete.
+- **getCurrent_team** is a String getter method which returns the current team of an Athlete.
 
--**setHeight** is a a void setter method which sets the value of the "height" instance variable to the value passed in as the parameter "h". This method can be called on an instance of the "Athletes" class, and takes a double as an argument, which will be stored in the "height" instance variable.
+- **setHeight** is a a void setter method which sets the value of the "height" instance variable to the value passed in as the parameter "h". This method can be called on an instance of the "Athletes" class, and takes a double as an argument, which will be stored in the "height" instance variable.
 
--**getHeight** is a double getter method which returns the height of an Athlete.
+- **getHeight** is a double getter method which returns the height of an Athlete.
 
--**setWeight** is a void setter method which sets the value of the "weight" instance variable to the value passed in as the parameter "w". This method can be called on an instance of the "Athletes" class, and takes a double as an argument, which will be stored in the "weight" instance variable.
+- **setWeight** is a void setter method which sets the value of the "weight" instance variable to the value passed in as the parameter "w". This method can be called on an instance of the "Athletes" class, and takes a double as an argument, which will be stored in the "weight" instance variable.
 
--**getWeight** is a double getter method which returns the weight of an Athlete.
+- **getWeight** is a double getter method which returns the weight of an Athlete.
 
 Then we have three different **edit** methods which differ in the type of the attributes they receive depending the type of the instance variables the athlete wants to change. The methods are called by the user in main class when he chooses the edit option in the menu and he gives a number (1-8) according to what he wants to change as well as the new value.
 
--The **first** one is used when having **String** such as the name, sport, bio, postion and current_team.
+- The **first** one is used when having **String** such as the name, sport, bio, postion and current_team.
 
--The **second** one is used when having **double** such as the height and the weight.
+- The **second** one is used when having **double** such as the height and the weight.
 
--The **third** one is used when having **int** which is the age.
+- The **third** one is used when having **int** which is the age.
 
--**getLikes** is a int getter method which returns the Likes of an athlete.
+- **getLikes** is a int getter method which returns the Likes of an athlete.
 
--**addLikes** is a void method which adds one like to an athlete when a coach likes his profile.
+- **addLikes** is a void method which adds one like to an athlete when a coach likes his profile.
 
 Coaches Class
 ---------------
 It is a public class which extends the "Users" class and also implements the Serializable interface. 
 It contains multiple private instance variables which are used to describe the attributes of a Coach.
 
--**Coaches** method is the constructor method of "Coaches" class that calls the constructor of the superclass passing the parameters "usern"(for the username),"p" (for password)and "c" (for choice).
+- **Coaches** method is the constructor method of "Coaches" class that calls the constructor of the superclass passing the parameters "usern"(for the username),"p" (for password)and "c" (for choice).
 
--**setYears** is is a void setter method which sets the value of the "years_of_experience" instance variable to the value passed in as the parameter "y". This method can be called on an instance of the "Coaches" class, and takes an int as an argument, which will be stored in the "years_of_experience" instance variable.
+- **setYears** is is a void setter method which sets the value of the "years_of_experience" instance variable to the value passed in as the parameter "y". This method can be called on an instance of the "Coaches" class, and takes an int as an argument, which will be stored in the "years_of_experience" instance variable.
 
--**getYears** is a int getter method which returns the years of experience of a coach.
+- **getYears** is a int getter method which returns the years of experience of a coach.
 
--**setTeam** is a void setter method which sets the value of the "team" instance variable to the value passed in as the parameter "t". This method can be called on an instance of the "Coaches" class, and takes a String as an argument, which will be stored in the "team" instance variable.
+- **setTeam** is a void setter method which sets the value of the "team" instance variable to the value passed in as the parameter "t". This method can be called on an instance of the "Coaches" class, and takes a String as an argument, which will be stored in the "team" instance variable.
 
--**getTeam** is an int getter method that return the team that the coach is in.
+- **getTeam** is an int getter method that return the team that the coach is in.
 
 Then we have two different **edit** methods which differ in the type of the attributes they receive depending the type of the instance variables the coach wants to change. The methods are called by the user in main class when he chooses the edit option in the menu and he gives a number (1-6) according to what he wants to change as well as the new value.
 
--The **first** one is used when having an **int** such as age and years of experience.
+- The **first** one is used when having an **int** such as age and years of experience.
 
--The **second** one is used when having **String** such as name, bio and team.
+- The **second** one is used when having **String** such as name, bio and team.
 
 Chat Class
 ------------
