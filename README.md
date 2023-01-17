@@ -210,4 +210,4 @@ After seeing the athletes the coach is asked whether or not they are interested 
 
 - **seeWholeConversation** method is used to print the whole conversation between the coach and an athlete (marked as receiver)
 
-- **sendNewMessage method is used to send a new message to a chosen athlete (marked as receiver)
+- **sendNewMessage** method is used to send a new message to a chosen athlete (marked as receiver)
