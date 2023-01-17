@@ -57,6 +57,9 @@ The ***MAIN-FINAL*** branch was the testing branch in which everyone committed t
 UML
 -----
 
+![image](https://user-images.githubusercontent.com/115432442/212995390-b6595857-435e-419f-80b5-2062f9e7464e.png)
+
+
 ##### Main class 
 
 - Get the ability to write and register data 
