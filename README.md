@@ -61,8 +61,8 @@ Data structure and algorithms used by the application
 The storing of our data happens in *.ser* files. More specifically, we created 3 array lists (*usersarray*, *coachesarray*, *athletesarray*) that contain the objects of each *User*, *Coach*, *Athlete* in the corresponding order. In the begging of the program, the array lists are deserialized (converted from bytes to objects) and are now ready to be used by the program without any needed connection with another database. At the end of the program execution, the updated by the users array lists are serialized, overriding the previous ones and being converted into bytes.
 Inside *coachesarray* and *athletesarray* there is another ArrayList called *messages*. This *messages* ArrayList is an instance variable of type Users, which is inherited by the Athletes and Coaches objects. It consists of many ArrayLists, each one representing a chat of the user with someone. These ArrayLists also consist of ArrayLists, with the latter representing a message and their sender. In this way, all messages can be saved. It must be noted that the **first** ArrayList inside the ArrayLists that represent a chat consists of only a String, the username of the contact.
 
-Users Class 
----------------
+### Users Class 
+
 The class uses inheritance and is the superclass of the subclassses Athletes and Coaches.
 The class, also implements the Serializable interface.
 
@@ -95,8 +95,8 @@ It is a public class which contains lots of set and get methods for several priv
 
 - **getMessages** is a getter method in the "Users" class, it returns the "messages" instance variable, which is an ArrayList of ArrayLists of ArrayLists of Strings. This method can be called on an instance of the "Users" class, and returns the value stored in the "messages" variable. It does not take any arguments.
 
-Athletes Class 
------------------
+### Athletes Class 
+
 It is a public class which extends the "Users" class and also implements the Serializable interface. 
 It contains multiple private instance variables which are used to describe the attributes of an Athlete.
 
@@ -130,8 +130,8 @@ Then we have three different **edit** methods which differ in the type of the at
 
 - **addLikes** is a void method which adds one like to an athlete when a coach likes his profile.
 
-Coaches Class
----------------
+### Coaches Class
+
 It is a public class which extends the "Users" class and also implements the Serializable interface. 
 It contains multiple private instance variables which are used to describe the attributes of a Coach.
 
@@ -151,8 +151,7 @@ Then we have two different **edit** methods which differ in the type of the attr
 
 - The **second** one is used when having **String** such as name, bio and team.
 
-Chat Class
-------------
+### Chat Class
 
 Chat class is responsible for the chats between athletes and coaches.
 Messages are stored in an ArrayList<Arraylist<Arraylist<String>>>.
@@ -173,9 +172,8 @@ The smallest Arraylist contains the message sent in the conversation between the
  Sender is the user that calls the method and the receiver is given as an argument.
  The method saves the name of the sender next to their message and inserts them to the Arraylists of both the sender and the receiver.
  
- ## AthletesActions
- ------------
-
+ ### AthletesActions
+ 
 AthletesActions class is responsible for the actions of the athletes. Everything an athlete can do 
 in our service happens inside AthletesActions.
 
@@ -187,8 +185,7 @@ in our service happens inside AthletesActions.
 
 - **sendMessage** method is used to send a message to a coach (marked as receiver)
 
-CoachActions
--------------
+### CoachActions
 
 CoachActions class is responsible for the actions of the coaches. Everything a coach can do 
 in our service happens inside CoachActions.
